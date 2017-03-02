@@ -241,8 +241,8 @@ PRODUCT_COPY_FILES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    libqcomfm_jni \
-    qcom.fmradio
+    FMRadio \
+    libfmjni
     
 # Gatekeeper
 PRODUCT_PACKAGES += \

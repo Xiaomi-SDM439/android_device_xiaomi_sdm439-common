@@ -363,6 +363,10 @@ PRODUCT_PACKAGES += \
     
     
 
+# QTI
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect \
+    libqti_vndfwk_detect.vendor
 
 
 # RenderScript HAL

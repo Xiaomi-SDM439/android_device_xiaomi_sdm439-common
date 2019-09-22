@@ -25,6 +25,15 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite-v29.so
 
 
+# HW crypto
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+    
+    
+    
+    
+    
+    
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -268,6 +277,10 @@ PRODUCT_PACKAGES += \
     
     
 
+
+# HW crypto
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
 # Input
 PRODUCT_COPY_FILES += \

@@ -179,7 +179,6 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_USE_SDCLANG := true
 
 # Recovery
-TARGET_RECOVERY_UPDATER_LIBS += librecovery_updater_msm
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # RIL

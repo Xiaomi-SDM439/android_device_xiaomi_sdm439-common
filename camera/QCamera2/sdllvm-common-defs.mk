@@ -16,7 +16,7 @@ ifeq ($(CAMERA_USE_SDCLANG),)
   ifneq ($(wildcard $(CAMERA_SDCLANG_ABS_PATH)),)
     CAMERA_SDCLANG_VERSION := $(shell $(CAMERA_SDCLANG_ABS_PATH)/llvm-config --version)
 
-    ifneq ($(shell expr $(CAMERA_SDCLANG_VERSION) \>= 4), 1)
+    #ifneq ($(shell expr $(CAMERA_SDCLANG_VERSION) \>= 4), 1)
       # Append Android build top if path is not absolute.
       ifneq ($(SDCLANG_PATH_2),$(filter /%,$(SDCLANG_PATH_2)))
       CAMERA_SDCLANG_ABS_PATH_2 := $(ANDROID_BUILD_TOP)/$(SDCLANG_PATH_2)
@@ -26,10 +26,10 @@ ifeq ($(CAMERA_USE_SDCLANG),)
 
       ifneq ($(wildcard $(CAMERA_SDCLANG_ABS_PATH_2)),)
 	CAMERA_SDCLANG_VERSION_2 := $(shell $(CAMERA_SDCLANG_ABS_PATH_2)/llvm-config --version)
-	ifeq ($(shell expr $(CAMERA_SDCLANG_VERSION_2) \>= 4), 1)
+	#ifeq ($(shell expr $(CAMERA_SDCLANG_VERSION_2) \>= 4), 1)
 	  CAMERA_USE_SDCLANG := false
 	  CAMERA_USE_SDCLANG_2 := true
-	endif
+	#endif
       else
 	# CAMERA_SDCLANG_ABS_PATH_2 does not exist.
 	CAMERA_USE_SDCLANG_2 := false
@@ -39,7 +39,7 @@ ifeq ($(CAMERA_USE_SDCLANG),)
   else
   # CAMERA_SDCLANG_ABS_PATH does not exist.
   CAMERA_USE_SDCLANG := false
-  endif
+  #endif
 endif
 
 LOCAL_SDCLANG := $(CAMERA_USE_SDCLANG)

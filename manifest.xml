@@ -763,16 +763,6 @@
         </interface>
         <fqname>@1.0::IVSIMService/default</fqname>
     </hal>
-    <!-- improveTouch Service-->
-    <hal format="hidl">
-        <name>vendor.qti.hardware.improvetouch.touchcompanion</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITouchCompanion</name>
-            <instance>TouchCompanionService</instance>
-        </interface>
-    </hal>
     <sepolicy>
         <version>28.0</version>
     </sepolicy>

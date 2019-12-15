@@ -1,4 +1,4 @@
-<!-- Copyright (c) 2018, The Linux Foundation. All rights reserved.
+<!-- Copyright (c) 2017, The Linux Foundation. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -26,23 +26,7 @@ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 <compatibility-matrix version="1.0" type="device">
-    <hal format="hidl" optional="true">
-        <name>android.frameworks.displayservice</name>
-        <version>1.0</version>
-        <interface>
-            <name>IDisplayService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.frameworks.displayservice</name>
-        <version>1.0</version>
-        <interface>
-            <name>IDisplayService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl" optional="false">
         <name>android.frameworks.schedulerservice</name>
         <version>1.0</version>
         <interface>
@@ -50,15 +34,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>android.frameworks.schedulerservice</name>
-        <version>1.0</version>
-        <interface>
-            <name>ISchedulingPolicyService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl" optional="false">
         <name>android.frameworks.sensorservice</name>
         <version>1.0</version>
         <interface>
@@ -66,47 +42,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>android.frameworks.sensorservice</name>
-        <version>1.0</version>
-        <interface>
-            <name>ISensorManager</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.graphics.composer</name>
-        <version>2.1</version>
-        <interface>
-            <name>IComposer</name>
-            <instance>vr</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.graphics.composer</name>
-        <version>2.1</version>
-        <interface>
-            <name>IComposer</name>
-            <instance>vr</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.health</name>
-        <version>2.0</version>
-        <interface>
-            <name>IHealth</name>
-            <instance>backup</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.health</name>
-        <version>2.0</version>
-        <interface>
-            <name>IHealth</name>
-            <instance>backup</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl" optional="false">
         <name>android.hidl.allocator</name>
         <version>1.0</version>
         <interface>
@@ -114,31 +50,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>ashmem</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hidl.allocator</name>
+    <hal format="hidl" optional="false">
+        <name>android.hidl.manager</name>
         <version>1.0</version>
         <interface>
-            <name>IAllocator</name>
-            <instance>ashmem</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hidl.manager</name>
-        <version>1.1</version>
-        <interface>
             <name>IServiceManager</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hidl.manager</name>
-        <version>1.1</version>
-        <interface>
-            <name>IServiceManager</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl" optional="false">
         <name>android.hidl.memory</name>
         <version>1.0</version>
         <interface>
@@ -146,15 +66,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>ashmem</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hidl.memory</name>
-        <version>1.0</version>
-        <interface>
-            <name>IMapper</name>
-            <instance>ashmem</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl" optional="false">
         <name>android.hidl.token</name>
         <version>1.0</version>
         <interface>
@@ -162,31 +74,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hidl.token</name>
-        <version>1.0</version>
-        <interface>
-            <name>ITokenManager</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.system.net.netd</name>
-        <version>1.1</version>
-        <interface>
-            <name>INetd</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.system.net.netd</name>
-        <version>1.1</version>
-        <interface>
-            <name>INetd</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl" optional="false">
         <name>android.system.wifi.keystore</name>
         <version>1.0</version>
         <interface>
@@ -194,44 +82,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>android.system.wifi.keystore</name>
-        <version>1.0</version>
-        <interface>
-            <name>IKeystore</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.radio.atcmdfwd</name>
-        <version>1.0</version>
-        <interface>
-            <name>IAtCmdFwd</name>
-            <instance>AtCmdFwdService</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.radio.atcmdfwd</name>
-        <version>1.0</version>
-        <interface>
-            <name>IAtCmdFwd</name>
-            <instance>AtCmdFwdService</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.xiaomi.hardware.displayfeature</name>
-        <version>1.0</version>
-        <interface>
-            <name>IDisplayFeature</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.xiaomi.hardware.displayfeature</name>
-        <version>1.0</version>
-        <interface>
-            <name>IDisplayFeature</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
+
 </compatibility-matrix>
+

@@ -201,6 +201,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+    <!-- IR Controller -->
+    <hal format="hidl">
+        <name>android.hardware.ir</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IConsumerIr</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
@@ -223,16 +233,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
        <interface>
            <name>IRadioConfig</name>
            <instance>default</instance>
-       </interface>
-    </hal>
-   <hal format="hidl">
-       <name>android.hardware.secure_element</name>
-       <transport>hwbinder</transport>
-       <version>1.0</version>
-       <interface>
-           <name>ISecureElement</name>
-           <instance>SIM1</instance>
-           <instance>SIM2</instance>
        </interface>
     </hal>
     <hal format="hidl">
@@ -460,6 +460,24 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.tetheroffload.config</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IOffloadConfig</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.tetheroffload.control</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IOffloadControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.radio.ims</name>
            <transport>hwbinder</transport>
            <version>1.4</version>
@@ -516,24 +534,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <fqname>@1.1::IDrmFactory/clearkey</fqname>
         <fqname>@1.1::ICryptoFactory/widevine</fqname>
         <fqname>@1.1::IDrmFactory/widevine</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.nfc</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>INfc</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.nxp.hardware.nfc</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>INqNfc</name>
-            <instance>default</instance>
-        </interface>
     </hal>
    <!-- IMS UCE Service -->
    <hal format="hidl">
@@ -697,14 +697,41 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
          </interface>
      </hal>
 
-    <!-- improveTouch Service-->
+     <!-- Xiaomi Additions -->
     <hal format="hidl">
-        <name>vendor.qti.hardware.improvetouch.touchcompanion</name>
+        <name>vendor.xiaomi.hardware.misys</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>ITouchCompanion</name>
-            <instance>TouchCompanionService</instance>
+            <name>IMiSys</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.misys</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IMiSys</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.mtdservice</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>IMTService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.vsimapp</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IVSIMService</name>
+            <instance>default</instance>
         </interface>
     </hal>
 </manifest>

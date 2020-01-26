@@ -170,6 +170,9 @@ BOARD_USES_METADATA_PARTITION := true
 ENABLE_VENDOR_IMAGE := true
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /vendor/firmware_mnt:/firmware \
+    /mnt/vendor/persist:/persist
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true

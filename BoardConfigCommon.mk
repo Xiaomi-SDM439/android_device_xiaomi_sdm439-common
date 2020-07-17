@@ -162,7 +162,7 @@ DEVICE_MATRIX_FILE := device/xiaomi/sdm439-common/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := device/xiaomi/sdm439-common/manifest.xml
 
 # Partitions
-BOARD_USES_METADATA_PARTITION := true
+#BOARD_USES_METADATA_PARTITION := true
 #ENABLE_VENDOR_IMAGE := true
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor

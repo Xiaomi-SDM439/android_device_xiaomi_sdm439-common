@@ -157,9 +157,9 @@ TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/cryptfs_hw
 TARGET_FS_CONFIG_GEN := device/xiaomi/sdm439-common/config.fs
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(VENDOR_PATH)/framework_compatibility_matrix.xml
-DEVICE_MATRIX_FILE := $(VENDOR_PATH)/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := device/xiaomi/sdm439-common/framework_compatibility_matrix.xml
+DEVICE_MATRIX_FILE := device/xiaomi/sdm439-common/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := device/xiaomi/sdm439-common/manifest.xml
 
 # Partitions
 BOARD_USES_METADATA_PARTITION := true

@@ -382,6 +382,7 @@ PRODUCT_PACKAGES += \
     libqsap_sdk \
     libwpa_client \
     wificond \
+    wcnss_service \
     wpa_supplicant
 
 PRODUCT_COPY_FILES += \

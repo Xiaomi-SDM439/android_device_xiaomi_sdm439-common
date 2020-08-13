@@ -317,7 +317,9 @@ PRODUCT_PACKAGES += \
     init.msm.usb.configfs.rc \
     init.qcom.factory.rc \
     init.qcom.usb.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    move_wifi_data.sh \
+    move_time_data.sh
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \

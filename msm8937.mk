@@ -272,6 +272,10 @@ PRODUCT_PACKAGES += \
     libstagefrighthw \
     libstagefright_soft_flacdec
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.1-service-qti
+
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt

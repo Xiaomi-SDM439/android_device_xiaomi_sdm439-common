@@ -128,9 +128,9 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne
 
 # ConsumerIr
-PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-impl \
-    android.hardware.ir@1.0-service
+#PRODUCT_PACKAGES += \
+#    android.hardware.ir@1.0-impl \
+#    android.hardware.ir@1.0-service
 
 # Context Hub
 PRODUCT_PACKAGES += \

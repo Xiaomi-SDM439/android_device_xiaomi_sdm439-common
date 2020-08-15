@@ -127,11 +127,6 @@ PRODUCT_PACKAGES += \
     cneapiclient \
     com.quicinc.cne
 
-# ConsumerIr
-#PRODUCT_PACKAGES += \
-#    android.hardware.ir@1.0-impl \
-#    android.hardware.ir@1.0-service
-
 # Context Hub
 PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0-impl.generic \
@@ -369,11 +364,6 @@ PRODUCT_PACKAGES += \
 # VNDK-SP
 PRODUCT_PACKAGES += \
     vndk-sp
-
-# VR
-#PRODUCT_PACKAGES += \
-#    android.hardware.vr@1.0-impl \
-#    android.hardware.vr@1.0-service
 
 # WiFi
 PRODUCT_PACKAGES += \

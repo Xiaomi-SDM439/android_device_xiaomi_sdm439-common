@@ -68,6 +68,7 @@
      <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
      <bool name="config_dozeAlwaysOnEnabled">true</bool>
 
+
     <!-- Flag specifying whether or not IMS will use the ImsResolver dynamically -->
      <bool name="config_dynamic_bind_ims">true</bool>
      <bool name="config_eap_sim_based_auth_supported">true</bool>
@@ -194,6 +195,11 @@
 
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
      <bool name="config_unplugTurnsOnScreen">true</bool>
+
+    <!-- Boolean indicating if restoring network selection should be skipped -->
+    <!-- The restoring is handled by modem if it is true-->
+    <bool translatable="false" name="skip_restoring_network_selection">true</bool>
+
 
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
          on the headphone/microphone jack. When false use the older uevent framework. -->

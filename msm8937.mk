@@ -279,6 +279,16 @@ PRODUCT_PACKAGES += \
 
 
 
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
+
+
+
+
+
 # IMS
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.6 \
@@ -288,9 +298,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0
 
 
+
+
 # HW crypto
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+
+
+
 
 # Input
 PRODUCT_COPY_FILES += \

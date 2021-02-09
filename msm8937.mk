@@ -333,6 +333,10 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.0.vendor
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
@@ -361,7 +365,10 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
  
     
-    
+
+# Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.0.vendor    
 
 # QTI
 PRODUCT_PACKAGES += \

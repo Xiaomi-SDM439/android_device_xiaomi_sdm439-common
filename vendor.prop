@@ -12,7 +12,10 @@ ro.audio.soundfx.dirac=true
 ro.vendor.audio.sdk.ssr=false
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
+<<<<<<< HEAD
 vendor.audio.feature.incall_music.enable=true
+=======
+>>>>>>> ffcf14d... msm8953-common: Update props from daisy
 vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio_hal.period_size=192
 vendor.audio.hw.aac.encoder=true
@@ -95,8 +98,11 @@ ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
 ro.qualcomm.cabl=2
+<<<<<<< HEAD
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_virtual_display_dimension=4096
+=======
+>>>>>>> ffcf14d... msm8953-common: Update props from daisy
 ro.vendor.display.cabl=2
 sdm.debug.disable_skip_validate=1
 vendor.display.disable_skip_validate=1
@@ -150,7 +156,11 @@ persist.vendor.data.mode=concurrent
 # Radio
 DEVICE_PROVISIONED=1
 persist.dbg.volte_avail_ovr=1
+<<<<<<< HEAD
 persist.dbg.vt_avail_ovr=0
+=======
+persist.dbg.vt_avail_ovr=1
+>>>>>>> ffcf14d... msm8953-common: Update props from daisy
 persist.dbg.wfc_avail_ovr=1
 persist.radio.multisim.config=dsds
 persist.rild.nitz_long_ons_0=""
@@ -176,9 +186,12 @@ service.qti.ims.enabled=1
 telephony.lteOnCdmaDevice=1
 vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 vendor.service.qti.ims.enabled=1
+<<<<<<< HEAD
 
 # Sensor
 ro.vendor.sensors.pseudo_gyro=true
+=======
+>>>>>>> ffcf14d... msm8953-common: Update props from daisy
 
 # Time Services
 persist.timed.enable=true

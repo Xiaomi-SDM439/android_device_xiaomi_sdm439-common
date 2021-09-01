@@ -190,7 +190,10 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(VENDOR_PATH)
 BOARD_SECCOMP_POLICY := $(VENDOR_PATH)/seccomp
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+
 
 # Sensors
 USE_SENSOR_MULTI_HAL := true

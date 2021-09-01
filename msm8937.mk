@@ -18,6 +18,9 @@
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
+#Doze
+PRODUCT_PACKAGES += \
+    XiaomiDoze
 
 # Permissions
 PRODUCT_COPY_FILES += \

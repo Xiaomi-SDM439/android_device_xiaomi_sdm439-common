@@ -42,9 +42,8 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 TARGET_BOARD_PLATFORM := msm8937
 
 # Properties
-TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
-TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+TARGET_SYSTEM_PROP += device/xiaomi/sdm439-common/system.prop
+TARGET_VENDOR_PROP += device/xiaomi/sdm439-common/vendor.prop
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
@@ -151,8 +150,8 @@ TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/cryptfs_hw
 TARGET_FS_CONFIG_GEN := $(VENDOR_PATH)/config.fs
 
 # HIDL
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
-DEVICE_MATRIX_FILE   := $(COMMON_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := device/xiaomi/sdm439-common/manifest.xml
+DEVICE_MATRIX_FILE   := device/xiaomi/sdm439-common/compatibility_matrix.xml
 
 # Partitions
 #ENABLE_VENDOR_IMAGE := true

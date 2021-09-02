@@ -180,6 +180,8 @@ TARGET_USE_SDCLANG := true
 
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
+BOARD_INCLUDE_RECOVERY_DTBO := true
+TARGET_RECOVERY_FSTAB := device/xiaomi/sdm439-common/rootdir/etc/fstab.recovery.qcom
 
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true

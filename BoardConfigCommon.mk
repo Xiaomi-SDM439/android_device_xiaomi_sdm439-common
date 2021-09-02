@@ -18,6 +18,10 @@ BOARD_VENDOR := xiaomi
 
 VENDOR_PATH := device/xiaomi/sdm439-common
 
+# Build
+BUILD_BROKEN_DUP_RULES := true
+
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8937
 TARGET_NO_BOOTLOADER := true

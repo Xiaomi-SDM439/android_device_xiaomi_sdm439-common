@@ -186,6 +186,7 @@ TARGET_PER_MGR_ENABLED := true
 # Properties
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 TARGET_ODM_PROP +=   $(LOCAL_PATH)/odm.prop
+TARGET_VENDOR_PROP += $(LOCAL_PATH)/vendor.prop
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true

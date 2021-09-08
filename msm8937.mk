@@ -25,7 +25,21 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite-v29.so
 
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.qcom.rc \
+    init.qcom.sh \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh \
+    init.target.rc \
+    ueventd.qcom.rc
 
+PRODUCT_PACKAGES += \
+    init.qcom.bt.sh \
+    init.qcom.fm.sh \
+    init.qcom.post_boot.sh
+    
 
 # Tethering
 PRODUCT_PACKAGES += \
@@ -349,34 +363,7 @@ PRODUCT_PACKAGES += \
     
     
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.class_late.sh \
-    init.class_main.sh \
-    init.crda.sh \
-    init.mdm.sh \
-    init.qcom.class_core.sh \
-    init.qcom.coex.sh \
-    init.qcom.crashdata.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
-    init.qcom.sdio.sh \
-    init.qcom.sensors.sh \
-    init.qcom.sh \
-    init.qcom.usb.sh \
-    init.qti.can.sh \
-    init.qti.charger.sh \
-    init.qti.fm.sh \
-    init.qti.ims.sh \
-    init.qti.manifest_sku.sh \
-    init.qti.qseecomd.sh \
-    qca6234-service.sh \
-    init.msm.usb.configfs.rc \
-    init.qcom.factory.rc \
-    init.qcom.usb.rc \
-    ueventd.qcom.rc \
-    move_wifi_data.sh \
-    move_time_data.sh
+
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \

@@ -351,18 +351,6 @@
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.cryptfshw</name>
-<<<<<<< HEAD
-=======
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ICryptfsHw</name>
-            <instance>default</instance>
-        </interface>
-    </hal>    
-    <hal format="hidl">
-        <name>vendor.qti.hardware.perf</name>
->>>>>>> 1b6743b... msm8953-common: Switch to cryptfshw QSEECom HIDL
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
@@ -515,15 +503,6 @@
         <interface>
             <name>IRTPService</name>
             <instance>imsrtpservice</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.ir</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IConsumerIr</name>
-            <instance>default</instance>
         </interface>
     </hal>
 </manifest> 

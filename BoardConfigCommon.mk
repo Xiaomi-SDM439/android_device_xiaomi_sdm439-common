@@ -109,8 +109,7 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
 
-# CNE / DPM
-BOARD_USES_QCNE := true
+
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
@@ -140,10 +139,9 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 USE_DEVICE_SPECIFIC_GPS := true
 TARGET_NO_RPC := true
 
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_mido
-TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-TARGET_RECOVERY_DEVICE_MODULES := libinit_mido
+# HIDL
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+DEVICE_MATRIX_FILE   := $(COMMON_PATH)/compatibility_matrix.xml
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
@@ -174,7 +172,8 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/recovery.qcom
 
 
-
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
@@ -202,22 +201,26 @@ TARGET_PER_MGR_ENABLED := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Properties
-TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
-TARGET_ODM_PROP +=   $(LOCAL_PATH)/odm.prop
-TARGET_VENDOR_PROP += $(LOCAL_PATH)/vendor.prop
+TARGET_SYSTEM_PROP := $(COMMON_PATH)/system.prop
+TARGET_ODM_PROP +=   $(COMMON_PATH)/odm.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
 BOARD_USES_QC_TIME_SERVICES := true
 
 
+# SELinux
+include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/fstab.qcom
 
-# Sensor
-USE_SENSOR_MULTI_HAL := true
-
+# Treble
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+BOARD_VNDK_VERSION := current
 
 
 # Wi-Fi
@@ -235,4 +238,4 @@ WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/wlan.ko"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/xiaomi/mido/BoardConfigVendor.mk
+-include vendor/xiaomi/olive/BoardConfigVendor.mk

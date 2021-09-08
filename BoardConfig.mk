@@ -181,7 +181,8 @@ TARGET_USES_INTERACTION_BOOST := true
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
-
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
 
 # Properties
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
@@ -192,8 +193,7 @@ TARGET_VENDOR_PROP += $(LOCAL_PATH)/vendor.prop
 BOARD_USES_QCOM_HARDWARE := true
 BOARD_USES_QC_TIME_SERVICES := true
 
-# RIL
-TARGET_RIL_VARIANT := caf
+
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/fstab.qcom

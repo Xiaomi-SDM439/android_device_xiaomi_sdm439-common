@@ -173,11 +173,15 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /mnt/vendor/persist:/persist
 
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := "/proc/sys/dev/dt2w"
+TARGET_USES_INTERACTION_BOOST := true
+
+
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
-# Power
-TARGET_POWERHAL_VARIANT := qcom
+
 
 # Properties
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop

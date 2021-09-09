@@ -14,9 +14,8 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/xiaomi/mido
+COMMON_PATH := device/xiaomi/sdm439-common
 
-TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
 # Build
 BUILD_BROKEN_DUP_RULES := true
